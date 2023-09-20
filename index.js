@@ -40,3 +40,16 @@ document.addEventListener('click', function(event) {
     }
 });
 
+const showSlideBtn = document.getElementById('showSlideBtn');
+const slide = document.getElementById('slide');
+const closeButton = document.getElementById('closeButton');
+
+showSlideBtn.addEventListener('click', function() {
+    slide.classList.toggle('visible');
+});
+
+closeButton.addEventListener('click', function() {
+    slide.classList.remove('visible');
+});
+
+
