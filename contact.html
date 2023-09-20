@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylecontact3.css">
+  <title>Document</title>
+</head>
+
+<body class="container">
+  <header>
+    <nav>
+      <h1>Déja-vu</h1>
+      <ul class="ul1">
+        <li><a href="femme.html">Femme</a></li>
+        <li><a href="homme.html">Homme</a></li>
+        <li><a href="enfant.html">Enfant</a></li>
+      </ul>
+      <ul class="ul2">
+        <div class="search-wrapper">
+          <input class="input" name="text" type="text" placeholder="Rechercher un article">
+          <div class="suggested-articles hidden">
+            <a href="article1.html">Sac</a>
+            <a href="article2.html">Chassures</a>
+            <a href="article3.html">Blouson</a>
+            <a href="article3.html">Jupes</a>
+            <a href="article3.html">Chemise</a>
+            <a href="article3.html">Sweat</a>
+          </div>
+        </div>
+        <li>Compte</li>
+        <img id="showSlideBtn" class="img1" src="../Sitedevetement/assets/panier.png" width="25px" alt="panier">
+      </ul>
+      <div id="slide" class="hidden">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2>Formulaire de contact</h2>
+    <form action="#" method="post" id="contact_form">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="Votre Nom et Prénom" name="name" id="name_input" required>
+      </div>
+      <div class="email">
+        <label for="email"></label>
+        <input type="email" placeholder="Votre email" name="email" id="email_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Votre numéro de téléphone" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Sélectionner un object" name="subject" id="subject_input" required>
+          <option disabled hidden selected>Sélectionner un objet</option>
+          <option>Commande</option>
+          <option>Retour</option>
+          <option>Achat boutique</option>
+          <option>Autres</option>
+        </select>
+      </div>
+      <div class="message">
+        <label for="message"></label>
+        <textarea name="message" placeholder="Votre message" message_input" cols="30" rows="5" required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Envoyer" id="form_button" />
+      </div>
+    </form>
+  </main>
+
+</body>
+
+</html>

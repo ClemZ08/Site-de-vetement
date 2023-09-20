@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -7,21 +8,23 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-
+h2 {
+  text-align: center;
+}
 nav {
   display: flex;
   width: 100%;
   position:relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 nav h1 {
   width: 20%;
   text-align: center;
   align-items: center;
   font-size: 40px
-}
-nav h1 a { 
-  text-decoration: none;
-  color: black;
 }
 nav ul {
   display: flex;
@@ -31,10 +34,6 @@ nav ul {
 nav ul li {
   list-style: none;
   cursor: pointer;
-}
-nav ul li a {
-  text-decoration: none;
-  color: black;
 }
 .ul1,
 .ul2 {
@@ -50,45 +49,7 @@ nav ul li a {
 .img1 {
   cursor: pointer;
 }
-h2 {
-  text-align: center;
-}
-.titre {
-  border: 1px solid black;
-}
-.section1,
-.section2 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.section1 img {
-  width: 30%;
-  border: solid black 1px;
-}
-.section2 img {
-  width: 30%;
-  border: solid black 1px;
-  margin-top: 5em;
-}
-#time {
-text-align: center;
-margin-top: 20px;
-font-size: large;
-}
-#date {
-text-align: center;
-}
 
-.footer {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-.footer p a {
-  text-decoration: none;
-  color: black;
-}
 .input {
   width: 100%;
   max-width: 220px;
@@ -136,5 +97,69 @@ text-align: center;
   background-color: #f2f2f2;
 }
 
+form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
 
+form div {
+  margin-bottom: 20px;
+}
 
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 95%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-color: grey;
+  box-shadow: 0px 0px 20px -18px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+input[type="submit"]:hover {
+  background-color: grey;
+}
+
+form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
