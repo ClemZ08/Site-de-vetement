@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+nav h1 {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  font-size: 40px
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.ul1,
+.ul2 {
+  width: 40%;
+  margin-left: 4em;
+}
+.ul1 {
+  gap: 8em;
+}
+.ul2 {
+ gap: 3em;
+}
+.section1 {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+}
+.section2 {
+  width: 100%;
+}
