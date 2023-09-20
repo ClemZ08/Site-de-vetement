@@ -13,6 +13,10 @@ nav {
   width: 100%;
   position:relative;
 }
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
 nav h1 {
   width: 20%;
   text-align: center;
@@ -58,8 +62,12 @@ nav ul li {
   border: solid 0.5px black;
 }
 #time {
-  text-align: right;
-  margin-top: 10px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+#date {
+  text-align: center;
 }
 
 #slide {
@@ -75,11 +83,64 @@ nav ul li {
 
   transition: right 1s ease-in-out; 
 }
-
 #slide.visible {
   right: 0%;
   opacity: 1;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.footer p a {
+  text-decoration: none;
+  color: black;
+}
 
+.input {
+  width: 100%;
+  max-width: 220px;
+  height: 5px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
 
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:focus {
+  border: 2px solid grey;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.suggested-articles {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: none; /* caché par défaut */
+  width: 100%;
+  z-index: 100; /* Assurez-vous que cela s'affiche au-dessus d'autres éléments */
+}
+
+.suggested-articles a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.suggested-articles a:hover {
+  background-color: #f2f2f2;
+}
