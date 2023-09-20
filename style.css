@@ -72,19 +72,19 @@ nav ul li {
 
 #slide {
   position: absolute;
-  right: -50%;
+  left: -200%;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #DDCFC0;
   border: 1px solid #ccc;
   width: 46.5%;
-  height: 500%;
+  height: 1200%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
-
-  transition: right 1s ease-in-out; 
+  transition: left 1s ease-in-out;
 }
+
 #slide.visible {
-  right: 0%;
+  left: 50%;
   opacity: 1;
 }
 
