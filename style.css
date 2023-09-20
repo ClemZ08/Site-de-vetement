@@ -144,3 +144,16 @@ nav ul li {
 .suggested-articles a:hover {
   background-color: #f2f2f2;
 }
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Ajustez la position en fonction de vos besoins */
+    right: 10px; /* Ajustez la position en fonction de vos besoins */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Styles pour le bouton "X" au survol */
+.close-button:hover {
+    color: red; /* Couleur du "X" au survol */
+}
