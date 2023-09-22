@@ -156,6 +156,50 @@ nav ul li {
   background-color: #f2f2f2;
 }
 
+.close-button {
+  position: absolute;
+  top: 10px; /* Ajustez la position en fonction de vos besoins */
+  right: 10px; /* Ajustez la position en fonction de vos besoins */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styles pour le bouton "X" au survol */
+.close-button:hover {
+  color: red; /* Couleur du "X" au survol */
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.bubble {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.cart {
+  display: none;
+  position: absolute;
+  font-family:Arial Narrow, Helvetica, sans-serif;
+  top: 50px;
+  right: 20px;
+  padding: 20px;
+  background-color: #faf3eb;
+  border: 1px solid #ccc;
+  width: 46.5%;
+  height: 500%;
+}
+
 
 @media screen and (max-width: 900px) {
   nav {
