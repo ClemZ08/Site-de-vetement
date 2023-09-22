@@ -69,29 +69,40 @@ nav ul li {
 #date {
   text-align: center;
 }
-
-#slide {
-  position: absolute;
-  right: -50%;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  width: 46.5%;
-  height: 500%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-
-  transition: right 1s ease-in-out; 
+.news {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#slide.visible {
-  right: 0%;
-  opacity: 1;
+
+.news1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.news1 input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
 }
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.footer div {
+  margin: 20px;
+}
+.footer p {
+  font-size: 15px;
+}
+.footer p span {
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: underline;
+
 }
 .footer p a {
   text-decoration: none;
@@ -129,9 +140,9 @@ nav ul li {
   left: 10px;
   border: 1px solid #ccc;
   background-color: white;
-  display: none; /* caché par défaut */
+  display: none;
   width: 100%;
-  z-index: 100; /* Assurez-vous que cela s'affiche au-dessus d'autres éléments */
+  z-index: 100;
 }
 
 .suggested-articles a {
@@ -144,3 +155,96 @@ nav ul li {
 .suggested-articles a:hover {
   background-color: #f2f2f2;
 }
+
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .ul1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 0;
+
+}
+.ul2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 7em;
+  margin-left: 0;
+}
+main {
+  margin: 1%;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    margin-left: 5%;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav h1 {
+    margin-left: 15px;
+  }
+  .ul1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+  }
+  .ul2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+  }
+  .section1{
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 img {
+    width: 100%;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 img {
+    width: 100%;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  
+}
+
