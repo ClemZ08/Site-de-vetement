@@ -71,6 +71,11 @@ h2 {
   border: solid black 1px;
   margin-top: 5em;
 }
+.section1 p {
+  position: absolute;
+  margin-left: 10px;
+}
+
 #time {
 text-align: center;
 margin-top: 20px;
@@ -79,11 +84,40 @@ font-size: large;
 #date {
 text-align: center;
 }
+.news {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.news1 input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.footer div {
+  margin: 20px;
+}
+.footer p {
+  font-size: 15px;
+}
+.footer p span {
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: underline;
+
 }
 .footer p a {
   text-decoration: none;
@@ -136,5 +170,87 @@ text-align: center;
   background-color: #f2f2f2;
 }
 
+@media screen and (max-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .ul1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 0;
 
+}
+.ul2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 7em;
+  margin-left: 0;
+}
+main {
+  margin: 1%;
+}
+
+}
+@media screen and (max-width: 550px) {
+  main {
+    margin-left: 5%;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav h1 {
+    margin-left: 15px;
+  }
+  .ul1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+  }
+  .ul2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+  }
+  .section1{
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 img {
+    width: 100%;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 img {
+    width: 100%;
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
 

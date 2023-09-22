@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="stylecompte.css">
   <title>Document</title>
 </head>
 
 <body class="container">
   <header>
     <nav>
-      <h1><a href="index.html">Déja-vu</a></h1>
+      <h1>Déja-vu</h1>
       <ul class="ul1">
-        <li>Femme</li>
+        <li><a href="femme.html">Femme</a></li>
         <li><a href="homme.html">Homme</a></li>
         <li><a href="enfant.html">Enfant</a></li>
       </ul>
@@ -21,34 +21,58 @@
         <div class="search-wrapper">
           <input class="input" name="text" type="text" placeholder="Rechercher un article">
           <div class="suggested-articles hidden">
-            <a href="article1.html">Sac</a>
-            <a href="article2.html">Chassures</a>
-            <a href="article3.html">Blouson</a>
-            <a href="article3.html">Jupes</a>
-            <a href="article3.html">Chemise</a>
-            <a href="article3.html">Sweat</a>
+            <a href="femme.html">Sac</a>
+            <a href="homme.html">Chassures</a>
+            <a href="homme.html">Blouson</a>
+            <a href="femme.html">Jupes</a>
+            <a href="enfant.html">Chemise</a>
+            <a href="enfant.html">Sweat</a>
           </div>
         </div>
         <li><a href="compte.html">Compte</a></li>
-        <img id="showSlideBtn" class="img1" src="../Sitedevetement/assets/panier.png" width="25px" alt="panier">
+        <img class="img1" src="../Sitedevetement/assets/panier.png" width="25px" alt="panier">
       </ul>
-      </div>
     </nav>
   </header>
   <main>
-    <div class="titre">
-      <h2>FEMME</h2>
+    <div class="compte">
+      <div class="compte1">
+        <h2>Compte</h2>
+      </div>
+      <div class="compte2">
+        <h2>Bonjour</h2>
+      </div>
     </div>
-    <section class="section1">
-      <img src="../Sitedevetement/assets/mannequin1.png" alt="">
-      <img src="../Sitedevetement/assets/mannequin2.png" alt="">
-      <img src="../Sitedevetement/assets/mannequin3.png" alt="">
-    </section>
-    <section class="section2">
-      <img src="../Sitedevetement/assets/mannequin4.png" alt="">
-      <img src="../Sitedevetement/assets/mannequin5.png" alt="">
-      <img src="../Sitedevetement/assets/mannequin6.png" alt="">
-    </section>
+    <div>
+      <h3>Inscription</h3>
+    </div>
+    <div class="form-container">
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="fullname">Nom complet :</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirmez le mot de passe :</label>
+          <input type="password" id="confirm-password" name="confirm_password" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">S'inscrire</button>
+        </div>
+      </form>
+    </div>
     <div class="news">
       <div class="news1">
         <p>Newsletter</p>
@@ -95,8 +119,11 @@
     <div id="time"></div>
     <div id="date"></div>
   </footer>
-
 </body>
 <script src="index.js"></script>
+
+</html>
+
+</body>
 
 </html>
