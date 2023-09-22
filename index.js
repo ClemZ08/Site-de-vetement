@@ -37,4 +37,27 @@ document.addEventListener('click', function(event) {
         suggestedArticles.style.display = 'none';
     }
 });
+document.addEventListener('click', function(event) {
+    if (!searchBar.contains(event.target) && !suggestedArticles.contains(event.target)) {
+        suggestedArticles.style.display = 'none';
+    }
+});
 
+const cartIcon = document.getElementById('cart-icon');
+const cart = document.getElementById('cart');
+let cartVisible = false;
+
+cartIcon.addEventListener('click', () => {
+    if (cartVisible) {
+        cart.style.display = 'none';
+    } else {
+        cart.style.display = 'block';
+    }
+    cartVisible = !cartVisible;
+});
+
+const closeButton = document.getElementById('closeButton');
+
+closeButton.addEventListener('click', function() {
+    cart.style.display = 'none';
+});
