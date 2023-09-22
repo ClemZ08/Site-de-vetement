@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  position:relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav h1 {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  font-size: 40px
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.ul1,
+.ul2 {
+  width: 40%;
+  margin-left: 4em;
+}
+.ul1 {
+  gap: 8em;
+}
+.ul2 {
+ gap: 3em;
+}
+.img1 {
+  cursor: pointer;
+}
+
+.section1 {
+  display: flex;
+  width: 99.9%;
+  margin-top: 5px;
+  border: solid 0.5px black;
+}
+.section2 {
+  width: 100%;
+  display: flex;
+}
+.section2 img {
+  width: 33.2%;
+  border: solid 0.5px black;
+}
+#time {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+#date {
+  text-align: center;
+}
+.news {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.news1 input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.footer div {
+  margin: 20px;
+}
+.footer p {
+  font-size: 15px;
+}
+.footer p span {
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: underline;
+
+}
+.footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+.input {
+  width: 100%;
+  max-width: 220px;
+  height: 5px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:focus {
+  border: 2px solid grey;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.suggested-articles {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: none;
+  width: 100%;
+  z-index: 100;
+}
+
+.suggested-articles a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.suggested-articles a:hover {
+  background-color: #f2f2f2;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px; /* Ajustez la position en fonction de vos besoins */
+  right: 10px; /* Ajustez la position en fonction de vos besoins */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styles pour le bouton "X" au survol */
+.close-button:hover {
+  color: red; /* Couleur du "X" au survol */
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.bubble {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.cart {
+  display: none;
+  position: absolute;
+  font-family:Arial Narrow, Helvetica, sans-serif;
+  top: 50px;
+  right: 20px;
+  padding: 20px;
+  background-color: #faf3eb;
+  border: 1px solid #ccc;
+  width: 46.5%;
+  height: 500%;
+}
+
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .ul1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 0;
+
+}
+.ul2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 7em;
+  margin-left: 0;
+}
+main {
+  margin: 1%;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    margin-left: 5%;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav h1 {
+    margin-left: 15px;
+  }
+  .ul1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+  }
+  .ul2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+  }
+  .section1{
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 img {
+    width: 100%;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 img {
+    width: 100%;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  
+}
+
